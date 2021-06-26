@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/stylee.css">
+    <title>Form</title>
+</head>
+<body>
+{{>navbar}} 
+    <section class="form-main">
+        <div class="container">
+        <h1 class="gallery-main-h1">One <span class="dot-color">Step</span> <br> Closer<span class="dot-color">.</span></h1>
+        <p class="gallery-main-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita <br> perspiciatis, nostrum ab exercitationem natus!  </p>
+    </div>
+    </section>
+
+    <section class="form section-padding-90">
+         <h1 class="section-h1">Form<span class="dot-color">.</span> </h1>
+         <div class="container mt-50">
+             <div class="row contact-box">
+                 <div class="col-lg-1"></div>
+                 <div class="col-lg-10">
+                    <form action="/form" method="POST">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Name</label>
+                            <input type="text" name="name" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Email</label>
+                            <input type="email" name="email" class="form-control" id="inputPassword4" >
+                          </div>
+                           <div class="form-group col-md-6">
+                            <label for="inputPassword4">Phone No</label>
+                            <input type="number" name="phone" class="form-control" id="inputPassword4" >
+                          </div>
+                           <div class="form-group col-md-6">
+                            <label for="inputPassword4">No.of Guests</label>
+                            <input type="number" name="guests" class="form-control" id="inputPassword4" >
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Selected Menu</label>
+                            <select name="menu" class="form-control">
+                                <option value="menu1">Menu 1</option>
+                                <option value="menu2">Menu 2</option>
+                                <option value="menu3">Menu 3</option>
+                                <option value="menu4">Menu 4</option>
+                                <option value="menu5">Menu 5</option>
+                                <option value="menu6">Menu 6</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Per Head</label>
+                            <input type="number" name="perhead" class="form-control" id="inputPassword4" >
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Booking Date</label>
+                            <input type="date" name="bookingdate" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Wedding Date</label>
+                            <input type="date" name="weddingdate" class="form-control" id="inputEmail4">
+                          </div>
+                          
+                          <div class="form-group col-md-12">
+                            <label for="exampleFormControlTextarea1">Your Message</label>
+                            <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <button type="submit" class="contact-btn"  value="form">Send Inquiry</button>
+                          </div>
+                    </form>    
+                 </div>
+                 <div class="col-lg-1"></div>
+                
+             </div>
+         </div>
+    </section>
+
+    <section class="footer">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-6 footer-text">
+                     <h1 class="footer-heading">Al Nazir Palace</h1>
+                     <p class="footer-paragraph1">DHA Phase 0.4,GT Lahore</p>
+                     <p class="footer-paragraph2">03484833429</p>
+                </div>
+                <div class="col-lg-6 footer-head">
+                    <p class="footer-paragraph3">Home</p>
+                      <p class="footer-paragraph3">Menu</p>
+                      <p class="footer-paragraph3">About</p>
+                      <p class="footer-paragraph3">Contact</p>
+                </div>
+                <hr>
+                <div class="foot">
+                    <p>All Rights Reserved</p>
+                    <p>Designed by aurangg.com</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+</body>
+</html>
